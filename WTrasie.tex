@@ -1,0 +1,164 @@
+\documentclass{article}
+\usepackage[margin=5mm]{geometry} 
+\usepackage{tabularx}
+\usepackage{arydshln} 
+\usepackage{multicol} 
+\usepackage{enumitem} 
+\usepackage{graphicx} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime2}
+\usepackage{hyperref}
+
+% remove date and page number
+\date{}
+\pagenumbering{gobble}
+
+% date format for \today dd.mm.yyyy
+\DTMnewdatestyle{mydate}{%
+  \renewcommand{\DTMdisplaydate}[4]{\number##3.\number##2.\number##1}%
+  \renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+
+\begin{document}
+
+% camper.png on the left, title in the middle, preparation.png on the right
+\begin{center}
+\includegraphics[width=0.15\textwidth]{camper.png}
+\hfill
+\Huge{W trasie}
+\hfill
+\includegraphics[width=0.1\textwidth]{trip.png}
+\end{center}
+
+
+
+\begin{multicols}{2}
+
+\section*{\includegraphics[height=5mm]{start.png} Przygotowanie do jazdy}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Gaz \dotfill Zamknięty \\
+Prąd \dotfill Odłączony \\
+Okna dachowe \dotfill Zamknięte \\
+Okna boczne \dotfill Zamknięte \\
+Światła kampera \dotfill Wyłączone \\
+Luki \dotfill Zamknięte \\
+Najazdy \dotfill Spakowane \\
+Szafki \dotfill Zamknięte \\
+Lodówka \dotfill Zamknięta dolnym zamkiem \\
+Lodówka \dotfill 12V \\
+Bagaże \dotfill Zabezpieczone \\
+Śmietnik \dotfill Opróżniony \\
+Boiler \dotfill Wyłączony \\
+Serwis zbiorników \dotfill Według potrzeb \\
+Podłogówka \dotfill Wyłączona \\
+Blaty \dotfill Puste \\
+Stół \dotfill Zaryglowany \\
+Otoczenie \dotfill Posprzątane \\
+Nocleg \dotfill Opłacony \\
+Nawigacja \dotfill Zasilona \\
+Plan trasy \dotfill OK \\
+Tankowanie \dotfill Zaplanowane \\
+Napoje \dotfill Są \\
+Jedzenie \dotfill Jest \\
+Dokumenty \dotfill Są \\
+Obchód \dotfill Zrobiony \\
+Lista "Przed wyjazdem" \dotfill Według potrzeb \\
+\textbf{GAZ} \dotfill \textbf{Zamknięty} \\
+\hline
+\end{tabularx}
+
+\section*{\includegraphics[height=5mm]{break.png} Krótki postój}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Hamulec ręczny \dotfill Zaciągnięty \\
+Światła \dotfill Wyłączone \\
+Zasłony szoferki \dotfill Zamknięte \\
+Rygle szoferki \dotfill Zamknięte \\
+\textbf{Lodówka \dotfill Gaz} \\
+Okna dachowe \dotfill Zamknięte \\
+Okna boczne \dotfill Zamknięte \\
+Rolety okien \dotfill Zamknięte \\
+Luki \dotfill Zamknięte \\
+Blokady luków \dotfill Zamknięte \\
+Drzwi \dotfill Zamknięte \\
+Blokada drzwi \dotfill Zamknięta \\
+Linka rowerów \dotfill Założona \\
+Alarm \dotfill Włączony \\
+\hline
+\end{tabularx}
+
+\section*{\includegraphics[height=5mm]{night.png} Postój nocny}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Hamulec ręczny \dotfill Zaciągnięty \\
+Światła \dotfill Wyłączone \\
+Prąd \dotfill 230V \\
+Lodówka \dotfill 230V \\
+Boiler \dotfill Elektryczny \\
+Podłogówka \dotfill Według potrzeb \\
+Ogrzewanie \dotfill Według potrzeb \\
+Klimatyzacja \dotfill Według potrzeb \\
+\hline
+\end{tabularx}
+
+\section*{\includegraphics[height=5mm]{service.png} Serwis zbiorników}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Woda biała \dotfill Uzupełniona \\
+Korek wody białej \dotfill Zamknięty \\
+Drzwiczki wody białej \dotfill Zamknięte \\
+Korek spustowy wody białej \dotfill Zamknięty \\
+Woda szara \dotfill Opróżniona \\
+Dźwigienka wody szarej \dotfill Zamknięta \\
+Rękawiczki \dotfill Założone \\
+Woda czarna \dotfill Opróżniona \\
+Zbiornik wody czarnej \dotfill Wypłukany \\
+Chemia do WC \dotfill Uzupełniona \\
+Zbiornik wody czarnej \dotfill Zatrzaśnięty \\
+Drzwiczki wody czarnej \dotfill Zamknięte \\
+\hline
+\end{tabularx}
+
+\section*{\includegraphics[height=5mm]{map.png} Plan trasy}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Cel \dotfill Zaprogramowany\\
+Przystanki \dotfill Zaplanowane\\
+Pogoda \dotfill Sprawdzona\\
+Drogi płatne \dotfill Sprawdzone\\
+Winiety \dotfill Sprawdzone\\
+Szególne przepisy drogowe krajów \dotfill Sprawdzone\\
+Treści napisów znaków drogowych \dotfill Przetłumaczone\\
+Szerokości i wysokości pojazdu \dotfill Sprawdzone\\
+Przejezdność dróg \dotfill Sprawdzona\\
+Plan B noclegu \dotfill Jest\\
+Gotówka na mandaty \dotfill Jest\\
+Przejścia graniczne \dotfill Sprawdzone\\
+
+\hline
+\end{tabularx}
+
+\section*{\includegraphics[height=5mm]{bed.png} Spanie}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Okna \dotfill Według potrzeb \\
+Rolety okien \dotfill Zamknięte \\
+Rowery \dotfill Zabezpieczone \\
+Meble \dotfill Zchowane \\
+Markiza zewnętrzna \dotfill Zwinęta \\
+Drzwi \dotfill Zamknięte \\
+Alarm \dotfill Włączony \\
+\hline
+\end{tabularx}
+
+\end{multicols}
+
+\begin{center}
+    \today  \\
+    \url{https://github.com/witoldkaptur/RVC}
+\end{center}
+
+
+\end{document}

@@ -1,0 +1,314 @@
+\documentclass{article}
+\usepackage[margin=5mm]{geometry} % Adjust margins as needed
+\usepackage{tabularx} % For flexible-width columns
+\usepackage{arydshln} % For dashed lines in tables
+\usepackage{multicol} % For multiple columns
+\usepackage{enumitem} % For customizing lists
+\usepackage{graphicx} % For including images
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime2}
+\usepackage{hyperref}
+
+% remove date and page number
+\date{}
+\pagenumbering{gobble}
+
+% date format for \today dd.mm.yyyy
+\DTMnewdatestyle{mydate}{%
+  \renewcommand{\DTMdisplaydate}[4]{\number##3.\number##2.\number##1}%
+  \renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+
+
+
+\begin{document}
+
+% camper.png on the left, title in the middle, preparation.png on the right
+\begin{center}
+\includegraphics[width=0.15\textwidth]{camper.png}
+\hfill
+\Huge{Przed wyjazdem}
+\hfill
+\includegraphics[width=0.1\textwidth]{preparation.png}
+\end{center}
+
+
+
+\begin{multicols}{2}
+
+
+
+\section{Pojazd}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Paliwo \dotfill Pełne \\
+AdBlue \dotfill Pełne \\
+Stan opon \dotfill Dobry \\
+Ciśnienie w oponach \dotfill OK \\
+Śruby kół \dotfill Dokręcone \\
+Korki wentylów \dotfill Są \\
+Płyn do spryskiwaczy \dotfill Pełny \\
+Spryskiwacze \dotfill Sprawne \\
+Wycieraczki \dotfill Sprawne \\
+Hamulec ręczny \dotfill Sprawny \\
+Kody błędów OBD \dotfill Brak \\
+Baterie kluczyków \dotfill OK \\
+\hline
+\end{tabularx}
+
+\section{Silnik}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Poziom oleju \dotfill OK \\
+Stan oleju \dotfill Czysty \\
+Płyn chłodniczy \dotfill Pełny \\
+Silnik \dotfill Pracuje poprawnie \\
+Check Engine \dotfill OFF \\
+Filtr oleju \dotfill OK \\
+Filtr paliwa \dotfill OK \\
+Filtr powietrza \dotfill OK \\
+Stan pasów klinowych \dotfill OK \\
+Stan przewodów \dotfill OK \\
+\hline
+\end{tabularx}
+
+\section{Kabina}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Klimatyzacja \dotfill Sprawna \\
+Ogrzewanie \dotfill Sprawne \\
+Radio \dotfill Sprawne \\
+Oświetlenie kabiny \dotfill Sprawne \\
+Ładowarka USB \dotfill Jest \\
+Kabel USB \dotfill Jest \\
+Nawigacja \dotfill Jest \\
+Ładowarka nawigacji \dotfill Jest \\
+Okulary przeciwsłoneczne \dotfill Są \\
+Woda \dotfill Jest \\
+Latarka \dotfill Jest \\
+Poduszki powietrzne \dotfill Ustawione \\
+Otwieranie okien \dotfill Sprawne \\
+\hline
+\end{tabularx}
+
+
+\section{Światła}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Światła mijania \dotfill Sprawne \\
+Światła drogowe \dotfill Sprawne \\
+Światła przeciwmgielne \dotfill Sprawne \\
+Światła postojowe \dotfill Sprawne \\
+Światła kierunkowskazów \dotfill Sprawne \\
+Światła hamowania \dotfill Sprawne \\
+Światła cofania \dotfill Sprawne \\
+Światła tablicy rejestracyjnej \dotfill Sprawne \\
+Światła awaryjne \dotfill Sprawne \\
+Oświetlenie tablicy rejestracyjnej \dotfill Sprawne \\
+\hline
+\end{tabularx}
+
+\section{Jazda próbna}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Hamulce \dotfill Sprawne \\
+Wspomaganie kierownicy \dotfill Sprawne \\
+Sprzęgło \dotfill Sprawne \\
+Skrzynia biegów \dotfill Sprawna \\
+Zegary \dotfill Sprawne \\
+Moc \dotfill Poprawna \\
+Tempomat \dotfill Sprawny \\
+Ogranicznik prędkości \dotfill Sprawny \\
+Automatyczny rozruch \dotfill Sprawny \\
+Ustawienie świateł \dotfill OK \\
+Ustawianie lusterka \dotfill OK \\
+Ustawianie fotela \dotfill OK \\
+Niezidentyfikowane dźwięki \dotfill Brak \\
+\hline
+\end{tabularx}
+
+\section{Dokumenty}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Dowód rejestracyjny \dotfill OK \\
+Ubezpieczenie OC \dotfill OK\\
+Dokumenty leasingowe \dotfill OK \\
+Assistance \dotfill OK \\
+Dowód osobisty \dotfill Jest \\
+Prawo jazdy \dotfill Jest \\
+Paszport \dotfill Jest \\
+Przegląd techniczny \dotfill OK \\
+Mapy \dotfill Są \\
+Atlasy samochodowe \dotfill Są \\
+Numery ICE \dotfill Zapisane \\
+\hline
+\end{tabularx}
+
+\section{Wyposarzenie}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Koło zapasowe \dotfill Poprawne \\
+Klucz do kół \dotfill Jest \\
+Lewarek \dotfill Jest \\
+Trójkąt ostrzegawczy \dotfill Jest \\
+Apteczka \dotfill Jest \\
+Gaśnica \dotfill Sprawdzona \\
+Kamizelka odblaskowa \dotfill Jest \\
+Akumulator do rozruchu \dotfill Naładowany \\
+Kable do rozruchu \dotfill Są \\
+Lejek \dotfill Jest \\
+Instrukcja obsługi \dotfill Jest \\
+Lina holownicza \dotfill Jest \\
+Zestaw narzędzi \dotfill Jest \\
+Taśma klejąca \dotfill Jest \\
+Super glue \dotfill Jest \\
+Trytki \dotfill Są \\
+Bezpieczniki zapasowe \dotfill Są \\
+Żarówki zapasowe \dotfill Są \\
+Skaner kodów OBD \dotfill Jest \\
+Najazdy \dotfill Są \\
+Kabel do podłączenia prądu \dotfill Jest \\
+\hline
+\end{tabularx}
+
+\section{Elektryka}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Kamera cofania \dotfill Sprawna \\
+Czujniki parkowania \dotfill Sprawne \\
+Kamera prawa \dotfill Sprawna \\
+Akumulator \dotfill Naładowany \\
+Bezpieczniki \dotfill OK \\
+Alternator \dotfill Sprawny \\
+Panele słoneczne \dotfill Umyte \\
+\hline
+\end{tabularx}
+
+\section{Instalacje sanitarne}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Zbiornik wody białej \dotfill Pełny \\
+Zbiornik wody białej \dotfill Zdezynfekowny \\
+Korek spustowy wody białej \dotfill Zamknięty \\
+Zbiornik wody szarej \dotfill Pusty \\
+Zbiornik wody czarnej \dotfill Przygotowany \\
+Pompa wody \dotfill Sprawna \\
+Płyn do WC \dotfill Jest \\
+Rękawiczki gumowe \dotfill Są \\
+Odpływy \dotfill Sprawne \\
+Sitka \dotfill Są \\
+Kran \dotfill Sprawny \\
+Toaleta \dotfill Sprawna \\
+Boiler gazowy \dotfill Sprawny \\
+Boiler elektryczny \dotfill Sprawny \\
+Wąż do uzupełniania wody \dotfill Jest \\
+Akcesoria do węża \dotfill Są \\
+\hline
+\end{tabularx}
+
+\section{Systemy Kampera}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Gaz \dotfill Pełny \\
+Butla gazowa \dotfill Zamocowana \\
+Instalacja gazowa \dotfill Szczelna \\
+Kuchenka \dotfill Sprawna \\
+Lodówka 12V \dotfill Sprawna \\
+Lodówka 230V \dotfill Sprawna \\
+Lodówka gazowa \dotfill Sprawna \\
+Klimatyzacja \dotfill Sprawna \\
+Pilot do klimatyzacji \dotfill Jest \\
+Ogrzewanie webasto \dotfill Sprawne \\
+Ogrzewanie podłogowe \dotfill Sprawne \\
+Panele słoneczne \dotfill Sprawne \\
+Akumulatory \dotfill Naładowane \\
+Oświetlenie \dotfill Sprawne \\
+Pleśń, grzyb \dotfill Brak \\
+Instalacja 230V \dotfill Sprawna \\
+Instalacja 12V \dotfill Sprawna \\
+Bezpieczniki \dotfill OK \\
+\hline
+\end{tabularx}
+
+\section{Okna}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Rolety \dotfill Sprawne \\
+Moskitiery \dotfill Sprawne \\
+Zasłony kabiny \dotfill Sprawne \\
+Zamki okien \dotfill Sprawne \\
+Otwieranie/Zamykanie okien \dotfill Sprawne \\
+\hline
+\end{tabularx}
+
+\section{Na zewnątrz}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Karoseria \dotfill Czysta \\
+Szyby \dotfill Czyste \\
+Lusterka \dotfill Czyste \\
+Poszycie \dotfill Nieuszkodzne \\
+Uszczelki drzwi \dotfill Sprawne \\
+Zamki drzwi \dotfill Sprawne \\
+Uszczelki okien \dotfill Sprawne \\
+Zamki okien \dotfill Sprawne \\
+Uszczelki luków \dotfill Sprawne \\
+Zamki luków \dotfill Sprawne \\
+Bagażnik rowerowy \dotfill Zamocowany \\
+\hline
+\end{tabularx}
+
+
+\section{Meble}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Zamki szafek \dotfill Sprawne \\
+Blokada stołu \dotfill Sprawna \\
+Blokada drzwi garażu \dotfill Jest \\
+Leżaki \dotfill Są \\
+Stolik przenośny \dotfill Jest \\
+Markiza zewnętrzna \dotfill Sprawna \\
+Pokrętło markizy \dotfill Jest \\
+Dywaniki \dotfill Są \\
+Wycieraczki \dotfill Są \\
+Śmietnik \dotfill Jest \\
+\hline
+\end{tabularx}
+
+\section{Alarm}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Alarm od okien \dotfill Sprawny \\
+Alarm od drzwi \dotfill Sprawny \\
+Alarm gazów \dotfill Sprawny \\
+Alarm od rowerów \dotfill Sprawny \\
+Numery telefonów \dotfill Zaprogramowane \\
+Włączenie alarmu \dotfill OK \\
+Wyłączenie alarmu \dotfill OK \\
+\hline
+\end{tabularx}
+
+\section{Kluczyki}
+\begin{tabularx}{\columnwidth}{|X|}
+\hline
+Auta \dotfill Są \\
+Drzwi kampera \dotfill Są \\
+Luków \dotfill Są \\
+Kłódek luków \dotfill Są \\
+Rygla szoferki \dotfill Jest \\
+Rygla drzwi kampera \dotfill Jest \\
+Bagażnika rowerowego \dotfill Jest \\
+\hline
+\end{tabularx}
+
+
+\end{multicols}
+
+\begin{center}
+    \today  \\
+    \url{https://github.com/witoldkaptur/RVC}
+\end{center}
+
+
+\end{document}
